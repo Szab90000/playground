@@ -1,10 +1,6 @@
 #!/usr/bin/env python
 # coding: utf8
 
-
-
-print("\033c")
-
 def atvalt(val, typ):
 		
 	if typ == "inch":
