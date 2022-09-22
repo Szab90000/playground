@@ -24,10 +24,11 @@ def AltSolution(dict):
     
             
 def MirrorString(inputstring):
-    print(inputstring[::-1])
+    print("Fordítva: " + inputstring[::-1])
 
 def SplitString(inputstring):
-    print(inputstring.split(" "))
+    split = inputstring.split(" ")
+    print(f"Listába rendezve szavanként: {split}")
 
 sentence = input("Adjon meg egy mondatot: \n")
 CountLetters(sentence)
