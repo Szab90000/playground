@@ -15,7 +15,9 @@ def convert(val, typ):
 			print(f"{num} inches")
 		else :
 			result = False
-			typ = input("Not correct unit\n")		
+			typ = input("Not correct unit\n")
+			
+#loopba van rakva a convert hogy ne álljon le az egész	egy incorrect unitnál, és lehessen újat beütni		
 
 
 if __name__ == "__main__":
