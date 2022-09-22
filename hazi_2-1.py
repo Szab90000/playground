@@ -29,10 +29,11 @@ def MirrorString(inputstring):
 def SplitString(inputstring):
     print(inputstring.split(" "))
 
-sentence = input("Adjon meg egy mondatot: \n")
-CountLetters(sentence)
-MirrorString(sentence)
-SplitString(sentence)
+if __name__ == "__main__":    
+    sentence = input("Adjon meg egy mondatot: \n")
+    CountLetters(sentence)
+    MirrorString(sentence)
+    SplitString(sentence)
 
 
 
