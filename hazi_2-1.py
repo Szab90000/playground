@@ -27,7 +27,9 @@ def MirrorString(inputstring):
     print(inputstring[::-1])
 
 def SplitString(inputstring):
-    print(inputstring.split(" "))
+    split = inputstring.split(" ")
+    print(f"Listába rendezve szavanként: {split}")
+
 
 if __name__ == "__main__":    
     sentence = input("Adjon meg egy mondatot: \n")
