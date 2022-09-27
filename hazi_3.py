@@ -7,11 +7,11 @@ def CanYouDraw(A, B, C):
     else:
        print(f"A {A}, {B} és {C} oldalú háromszög NEM szerkeszthető")     
 
+if __name__ == "__main__":
+    print("Adja meg a háromszög 3 oldalát cm-ben:")
 
-print("Adja meg a háromszög 3 oldalát cm-ben:")
+    side1 = int(input("a oldal (cm): "))
+     side2 = int(input("b oldal (cm): "))
+    side3 = int(input("c oldal (cm): "))
 
-side1 = int(input("a oldal (cm): "))
-side2 = int(input("b oldal (cm): "))
-side3 = int(input("c oldal (cm): "))
-
-CanYouDraw(side1, side2, side3)
+    CanYouDraw(side1, side2, side3)
