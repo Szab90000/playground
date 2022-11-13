@@ -1,14 +1,14 @@
+import string
 def destroyfile(filepath): 
     with open(filepath, 'r') as novella:
 
         line = novella.readline()
-        punctuation = ".,?!"
-        wovel = "aáeéiíoóöőuúüű"
+        wovel = "aáeéiíoóöőuúüűAÁEÉOÓÖŐUÚÜŰ"
         result = []
 
         while line:
             if not line.isspace():
-                newline = line.translate(line.maketrans('', '', punctuation)).translate(line.maketrans('', '', wovel))  #ékezetes betűket nem távolítja el, de azt feltételezem, hogy ez nem a kód hibája, hanem valami encoding probléma
+                newline = line.translate(line.maketrans('', '', string.punctuation)).translate(line.maketrans('', '', wovel))  #ékezetes betűket nem távolítja el, de azt feltételezem, hogy ez nem a kód hibája, hanem az IDE-nél valami encoding probléma.
                 result.append(newline)
             line = novella.readline()
 
